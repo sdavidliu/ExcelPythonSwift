@@ -1,0 +1,1356 @@
+var tempPathStepList = [PathStep]()
+
+var z1Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go outside through the doors shown", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z1Neighbors["A1"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go to this end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Turn around to the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .rightUTurn))
+tempPathStepList.append(PathStep(directionText: "Go up the stairs on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightLeft))
+z1Neighbors["A2"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down this end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Take the elevator on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+z1Neighbors["A3"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go to this end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z1Neighbors["A4"] = tempPathStepList
+
+primaryToPrimaryDescriptionsMap["Zone 1"] = z1Neighbors
+
+
+var z2Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go to this end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Go left into the hall ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+z2Neighbors["A5"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go to this end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Go outside through the doors shown", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z2Neighbors["A6"] = tempPathStepList
+
+primaryToPrimaryDescriptionsMap["Zone 2"] = z2Neighbors
+
+
+var z3Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down this end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z3Neighbors["A4"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go to this end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Turn right into the hall ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+z3Neighbors["A5"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go to this end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Go down the stairs ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z3Neighbors["A7"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down this end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z3Neighbors["A8"] = tempPathStepList
+
+primaryToPrimaryDescriptionsMap["Zone 3"] = z3Neighbors
+
+
+var z4Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go up the stairs shown", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z4Neighbors["A7"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hallway shown", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z4Neighbors["A9"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hallway shown", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z4Neighbors["A10"] = tempPathStepList
+
+primaryToPrimaryDescriptionsMap["Zone 4"] = z4Neighbors
+
+
+var z5Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down this end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z5Neighbors["A10"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Take the elevator shown", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z5Neighbors["A11"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hallway shown", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z5Neighbors["A12"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Take the stairway shown", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z5Neighbors["A13"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hallway shown", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z5Neighbors["A14"] = tempPathStepList
+
+primaryToPrimaryDescriptionsMap["Zone 5"] = z5Neighbors
+
+
+var z6Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the stairs shown", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Go through the doors ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z6Neighbors["A14"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go to this end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Take the hallway on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+z6Neighbors["A15"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go to this end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Go through the doors ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z6Neighbors["A16"] = tempPathStepList
+
+primaryToPrimaryDescriptionsMap["Zone 6"] = z6Neighbors
+
+
+var z7Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down this end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z7Neighbors["A16"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go up the stairs shown", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Go through the doors ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z7Neighbors["A17"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go to this end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Go through the doors ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z7Neighbors["A18"] = tempPathStepList
+
+primaryToPrimaryDescriptionsMap["Zone 7"] = z7Neighbors
+
+
+var z8Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go through the doors shown", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z8Neighbors["A18"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go through the doors shown", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z8Neighbors["A19"] = tempPathStepList
+
+primaryToPrimaryDescriptionsMap["Zone 8"] = z8Neighbors
+
+
+var z9Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go to this end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Go through the doors ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z9Neighbors["A19"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down this end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z9Neighbors["A20"] = tempPathStepList
+
+primaryToPrimaryDescriptionsMap["Zone 9"] = z9Neighbors
+
+
+var z10Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down this end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z10Neighbors["A20"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down this end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z10Neighbors["A21"] = tempPathStepList
+
+primaryToPrimaryDescriptionsMap["Zone 10"] = z10Neighbors
+
+
+var z11Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Take this hall ahead to the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightLeft))
+tempPathStepList.append(PathStep(directionText: "Go down the hallway ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z11Neighbors["A15"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hallway shown", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z11Neighbors["A21"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hallway shown", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z11Neighbors["A22"] = tempPathStepList
+
+primaryToPrimaryDescriptionsMap["Zone 11"] = z11Neighbors
+
+
+var z12Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down this end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z12Neighbors["A22"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hallway shown", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z12Neighbors["A23"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down this end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Turn right at the end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Take the hall ahead to the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightLeft))
+z12Neighbors["A24"] = tempPathStepList
+
+primaryToPrimaryDescriptionsMap["Zone 12"] = z12Neighbors
+
+
+var z13Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down this end of the hall.", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z13Neighbors["A12"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down this end of the hall.", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Go down the stairs ahead.", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z13Neighbors["A23"] = tempPathStepList
+
+primaryToPrimaryDescriptionsMap["Zone 13"] = z13Neighbors
+
+
+var z14Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down this end of the hall.", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z14Neighbors["A8"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hallway shown.", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z14Neighbors["A9"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down this end of the hall.", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+z14Neighbors["A24"] = tempPathStepList
+
+primaryToPrimaryDescriptionsMap["Zone 14"] = z14Neighbors
+
+
+var oz16Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go through the entrance shown.", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+oz16Neighbors["A1"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go through the entrance shown.", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+oz16Neighbors["A6"] = tempPathStepList
+
+primaryToPrimaryDescriptionsMap["OutZone 16"] = oz16Neighbors
+
+
+var a1Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go up the stairs on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightLeft))
+a1Neighbors["A2"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Take the elevator on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a1Neighbors["A3"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go to the end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a1Neighbors["A4"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Take the left path", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Follow the path to the entryway", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a1Neighbors["A6"] = tempPathStepList
+
+var a2Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go to the doors", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a2Neighbors["A1"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn around to the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .leftUTurn))
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Take the elevator on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a2Neighbors["A3"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn around to the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .leftUTurn))
+tempPathStepList.append(PathStep(directionText: "Go to the end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a2Neighbors["A4"] = tempPathStepList
+
+var a3Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Continue down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the doorway on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a3Neighbors["A1"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Continue down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Turn around and go up the stairs", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .rightUTurn))
+a3Neighbors["A2"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Go to the end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a3Neighbors["A4"] = tempPathStepList
+
+var a4Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go  to the end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the doors ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a4Neighbors["A1"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go  to the end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Turn around and go up the stairs", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .rightUTurn))
+a4Neighbors["A2"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Take the first right into the elevator", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a4Neighbors["A3"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go right ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightRight))
+tempPathStepList.append(PathStep(directionText: "Go to the end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a4Neighbors["A5"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go left ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightLeft))
+tempPathStepList.append(PathStep(directionText: "Go down the stairs", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a4Neighbors["A7"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a4Neighbors["A8"] = tempPathStepList
+
+var a5Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Turn right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a5Neighbors["A4"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Go to the end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Go through a door ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a5Neighbors["A6"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Go towards the right end", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightRight))
+tempPathStepList.append(PathStep(directionText: "Go down the stairs", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a5Neighbors["A7"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Make a slight left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightLeft))
+tempPathStepList.append(PathStep(directionText: "Continue down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a5Neighbors["A8"] = tempPathStepList
+
+var a6Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Take the path on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Through the doors on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a6Neighbors["A1"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go to the end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Go left into the hall ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a6Neighbors["A5"] = tempPathStepList
+
+var a7Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go across the room to the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightRight))
+tempPathStepList.append(PathStep(directionText: "Go into the hall ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a7Neighbors["A4"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go slightly left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightLeft))
+tempPathStepList.append(PathStep(directionText: "Go to the end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a7Neighbors["A5"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go across the room to the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightRight))
+tempPathStepList.append(PathStep(directionText: "Turn right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Go down the hall ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a7Neighbors["A8"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go across the room ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Turn around to the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .leftUTurn))
+tempPathStepList.append(PathStep(directionText: "Go down the hall ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a7Neighbors["A9"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go across the room ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Go into the hall ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a7Neighbors["A10"] = tempPathStepList
+
+var a8Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn right ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Go into the hall ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a8Neighbors["A4"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go into the hallway ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightLeft))
+tempPathStepList.append(PathStep(directionText: "Go to the end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a8Neighbors["A5"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Go down the stairs ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a8Neighbors["A7"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn right ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Go down the hall ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a8Neighbors["A9"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go to the end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Go into the next hall ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightRight))
+a8Neighbors["A24"] = tempPathStepList
+
+var a9Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go left ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Turn around to the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .rightUTurn))
+tempPathStepList.append(PathStep(directionText: "Go up the stairs ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a9Neighbors["A7"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go left ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Go to the end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a9Neighbors["A8"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go left ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Go down the hall ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a9Neighbors["A10"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn right ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Go to the end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Go into the next hall ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightRight))
+a9Neighbors["A24"] = tempPathStepList
+
+var a10Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go up the stairs ahead to the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightLeft))
+a10Neighbors["A7"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go into the hallway ahead to the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightRight))
+a10Neighbors["A9"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Take the elevator ahead on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightRight))
+a10Neighbors["A11"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Take the first hall on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a10Neighbors["A12"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go to the end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Take the stairs on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a10Neighbors["A13"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Take the second hall on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a10Neighbors["A14"] = tempPathStepList
+
+var a11Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a11Neighbors["A10"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a11Neighbors["A12"] = tempPathStepList
+
+a11Neighbors["A13"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Go to the end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Take the hall on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a11Neighbors["A14"] = tempPathStepList
+
+var a12Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a12Neighbors["A10"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Take the elevator ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a12Neighbors["A11"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go up the stairs ahead to the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightLeft))
+a12Neighbors["A13"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Go to the end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Take the hall on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a12Neighbors["A14"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go to the end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Go down the stairs", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a12Neighbors["A23"] = tempPathStepList
+
+var a13Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a13Neighbors["A10"] = tempPathStepList
+
+a13Neighbors["A11"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Take the hall ahead to the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightLeft))
+a13Neighbors["A12"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Take the hall ahead to the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightRight))
+a13Neighbors["A14"] = tempPathStepList
+
+var a14Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a14Neighbors["A10"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Take the elevator ahead to the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightRight))
+a14Neighbors["A11"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Take the first hall on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a14Neighbors["A12"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go up the stairs ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a14Neighbors["A13"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go up the stairs ahead" , directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Go across the room to the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightLeft))
+tempPathStepList.append(PathStep(directionText: "Take the hall on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a14Neighbors["A15"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go up the stairs ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Go down the hall ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a14Neighbors["A16"] = tempPathStepList
+
+var a15Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Go down the stairs on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightRight))
+tempPathStepList.append(PathStep(directionText: "Go through the doors ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a15Neighbors["A14"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Turn left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Go down the hall ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a15Neighbors["A16"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightRight))
+tempPathStepList.append(PathStep(directionText: "Take the hall on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a15Neighbors["A21"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightRight))
+tempPathStepList.append(PathStep(directionText: "Take the hall on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a15Neighbors["A22"] = tempPathStepList
+
+var a16Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the stairs ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Go through the doors ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a16Neighbors["A14"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Take the hall ahead to the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightLeft))
+a16Neighbors["A15"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Go up the stairs on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Go through the doors ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a16Neighbors["A17"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Go through the doors on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a16Neighbors["A18"] = tempPathStepList
+
+var a17Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Go through the doors ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a17Neighbors["A16"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go through the doors ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a17Neighbors["A18"] = tempPathStepList
+
+var a18Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn right ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightRight))
+tempPathStepList.append(PathStep(directionText: "Go through the doors ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a18Neighbors["A16"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go up the stairs ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Go through the doors ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a18Neighbors["A17"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go through the doors ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a18Neighbors["A19"] = tempPathStepList
+
+var a19Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go through the doors ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a19Neighbors["A18"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a19Neighbors["A20"] = tempPathStepList
+
+var a20Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go throug the doors on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a20Neighbors["A19"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a20Neighbors["A21"] = tempPathStepList
+
+var a21Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightLeft))
+a21Neighbors["A15"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a21Neighbors["A20"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Take the hall ahead to the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightRight))
+a21Neighbors["A22"] = tempPathStepList
+
+var a22Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightLeft))
+a22Neighbors["A15"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Take the hall ahead to the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightRight))
+a22Neighbors["A21"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the stairs ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Take the hall on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Go up the stairs ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a22Neighbors["A23"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the stairs ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Turn right at the end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Take the hall ahead to the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightLeft))
+a22Neighbors["A24"] = tempPathStepList
+
+var a23Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go through the doors ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a23Neighbors["A12"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn right ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Go up the stairs ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a23Neighbors["A22"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn left ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Turn right at the end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Take the hall ahead to the left" , directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightLeft))
+a23Neighbors["A24"] = tempPathStepList
+
+var a24Neighbors = [String:[PathStep]]()
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go to the end of the hall ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a24Neighbors["A8"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Take the first hall on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a24Neighbors["A9"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Go down the hall ahead on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Go down the first hall on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Go up the stairs ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a24Neighbors["A22"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Go down the hall ahead on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Go to the end of the hall ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a24Neighbors["A23"] = tempPathStepList
+
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Through the door on the left" , directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a1Neighbors["S1"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Exit through the doors", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a1Neighbors["S2"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+a1Neighbors["S3"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Through the first door on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightRight))
+a1Neighbors["S12"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the second door on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a1Neighbors["S13"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the third door on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a1Neighbors["S14"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Through the door on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a2Neighbors["S1"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn around to the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .leftUTurn))
+tempPathStepList.append(PathStep(directionText: "Through the door on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightRight))
+a2Neighbors["S12"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn around to the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .leftUTurn))
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the second door on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a2Neighbors["S13"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn around to the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .leftUTurn))
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the third door on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a2Neighbors["S14"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Continue down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the doorway on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a3Neighbors["S1"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Continue down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the doorway on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a3Neighbors["S12"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn slightly right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightRight))
+tempPathStepList.append(PathStep(directionText: "Through the doorway across the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a3Neighbors["S13"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn slightly left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightLeft))
+tempPathStepList.append(PathStep(directionText: "Through the doorway across the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a3Neighbors["S14"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go to the end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the doors on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a4Neighbors["S1"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Turn at the third left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Through the doors ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a4Neighbors["S12"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Turn at the second left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Through the doors ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a4Neighbors["S13"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Turn at the first left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Through the doors ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a4Neighbors["S14"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Through the doors ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a4Neighbors["S15"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Make a right ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightRight))
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the second doors on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a4Neighbors["S16"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the first two doors on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a5Neighbors["S4"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the second two doors on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a5Neighbors["S5"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the third two doors on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a5Neighbors["S6"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the third two doors on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a5Neighbors["S7"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Take the stairs on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Through the doors on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightRight))
+a5Neighbors["S8"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Take the stairs on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Through the doors on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightLeft))
+a5Neighbors["S9"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Take the stairs on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Through the first doors on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightRight))
+a5Neighbors["S10"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Take the stairs on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Through the second doors on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightRight))
+a5Neighbors["S11"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Turn left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Through the doors on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightLeft))
+a5Neighbors["S15"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn left ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Through the doors ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a5Neighbors["S16"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the first two doors on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a6Neighbors["S4"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the second two doors on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a6Neighbors["S5"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the third two doors on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a6Neighbors["S6"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the fourth two doors on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a6Neighbors["S7"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Take the stairs on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Through the doors on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightRight))
+a6Neighbors["S8"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Take the stairs on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Through the doors on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightLeft))
+a6Neighbors["S9"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go to the end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Take the stairs ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightRight))
+tempPathStepList.append(PathStep(directionText: "Through the first doors on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightRight))
+a6Neighbors["S10"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go to the end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Take the stairs ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightRight))
+tempPathStepList.append(PathStep(directionText: "Through the second doors on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightRight))
+a6Neighbors["S11"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go across the room ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the doors on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a7Neighbors["S15"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall to the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightLeft))
+tempPathStepList.append(PathStep(directionText: "Through the second doors on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a7Neighbors["S16"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Through the set of doors ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a7Neighbors["S17"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+a7Neighbors["S18"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall to the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightLeft))
+tempPathStepList.append(PathStep(directionText: "Through the doors on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a7Neighbors["S19"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Through the doors ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a8Neighbors["S15"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall to the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightLeft))
+tempPathStepList.append(PathStep(directionText: "Through the second door on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a8Neighbors["S16"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go to the end of the hall ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the door ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a8Neighbors["S41"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the last door on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a8Neighbors["S42"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the third door on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a8Neighbors["S43"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the second door on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a8Neighbors["S44"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the first door on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a8Neighbors["S45"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go left ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Turn right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Through the doors ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a9Neighbors["S17"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+a9Neighbors["S18"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go left ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Go left ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Through the doors ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a9Neighbors["S19"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn right ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Go to the end of the hall ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the door ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a9Neighbors["S41"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn right ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Through the last door on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a9Neighbors["S42"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn right ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Through the third door on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a9Neighbors["S43"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn right ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Through the second door on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a9Neighbors["S44"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go left ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Through the first door on the right" , directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a9Neighbors["S45"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall to the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightLeft))
+tempPathStepList.append(PathStep(directionText: "Through the doors on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a10Neighbors["S17"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+a10Neighbors["S18"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Through the doors ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a10Neighbors["S19"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Through the doors ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a10Neighbors["S20"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the second doors on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a10Neighbors["S21"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the fourth doors on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a10Neighbors["S22"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Through the last doors on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a11Neighbors["S20"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Through the first doors on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a11Neighbors["S21"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Through the first doors on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a11Neighbors["S22"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Go down the hallway ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the last doors on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a12Neighbors["S20"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Through the doors ahead to the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightRight))
+a12Neighbors["S21"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Through the doors ahead to the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightLeft))
+a12Neighbors["S22"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Through the last two doors on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a12Neighbors["S34"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Through the last two doors on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a12Neighbors["S35"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Through the second two doors on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a12Neighbors["S36"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Through the first door on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a12Neighbors["S37"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Through the first door on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a12Neighbors["S38"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the last doors on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a13Neighbors["S20"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Through the first doors on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a13Neighbors["S21"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Through the first doors on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a13Neighbors["S22"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the last doors on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a14Neighbors["S20"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Through the fourth doors on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a14Neighbors["S21"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Through the second doors on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a14Neighbors["S22"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go up the stairs ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the door on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a14Neighbors["S23"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go up the stairs ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the door ahead to the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightLeft))
+a14Neighbors["S24"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Through the door on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a15Neighbors["S23"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Through the door on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a15Neighbors["S24"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightRight))
+tempPathStepList.append(PathStep(directionText: "Through the doors ahead on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a15Neighbors["S33"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Through the door ahead to the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightRight))
+a16Neighbors["S23"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Through the door ahead to the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightLeft))
+a16Neighbors["S24"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the door ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a16Neighbors["S25"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the stairs", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the door on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a17Neighbors["S25"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Through the door on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a18Neighbors["S25"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Through the door ahead on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a18Neighbors["S26"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Through the second door on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a18Neighbors["S27"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Through the door ahead on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a19Neighbors["S26"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Through the first door on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a19Neighbors["S27"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Go into the large room ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a19Neighbors["S28"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Go into the large room ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the door on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a19Neighbors["S29"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "In the room to the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a19Neighbors["S30"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Through the doorway ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Go into the large room ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a20Neighbors["S28"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Through the doorway ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Go into the large room ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the door on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a20Neighbors["S29"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Through the doorway ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a20Neighbors["S30"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Through the door on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a20Neighbors["S31"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Through the door on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a20Neighbors["S32"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the door on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a21Neighbors["S31"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the door on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a21Neighbors["S32"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Through the doors ahead to the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightLeft))
+a21Neighbors["S33"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Through the first doors on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a22Neighbors["S33"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn right at the end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Through the first door on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a22Neighbors["S39"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn right at the end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Through the second door on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a22Neighbors["S40"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Through the first two doors on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a23Neighbors["S34"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Through the first two doors on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a23Neighbors["S35"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Through the second two doors on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a23Neighbors["S36"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Through the last door on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a23Neighbors["S37"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Through the last door on the left", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+a23Neighbors["S38"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn left ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Turn right at the end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Through the first door on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a23Neighbors["S39"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn left ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Turn right at the end of the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Through the second door on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a23Neighbors["S40"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Through the door ahead to the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .slightRight))
+a24Neighbors["S39"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Through the door ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a24Neighbors["S40"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Through the door on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a24Neighbors["S41"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Turn right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Through the door ahead", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+a24Neighbors["S42"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the second door on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a24Neighbors["S43"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the third door on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a24Neighbors["S44"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the last door on the right", directionImage: "https://www.transparenttextures.com/patterns/asfalt-light.png", arrow: .right))
+a24Neighbors["S45"] = tempPathStepList
+
+primaryToPrimaryDescriptionsMap["A1"] = a1Neighbors
+primaryToPrimaryDescriptionsMap["A2"] = a2Neighbors
+primaryToPrimaryDescriptionsMap["A3"] = a3Neighbors
+primaryToPrimaryDescriptionsMap["A4"] = a4Neighbors
+primaryToPrimaryDescriptionsMap["A5"] = a5Neighbors
+primaryToPrimaryDescriptionsMap["A6"] = a6Neighbors
+primaryToPrimaryDescriptionsMap["A7"] = a7Neighbors
+primaryToPrimaryDescriptionsMap["A8"] = a8Neighbors
+primaryToPrimaryDescriptionsMap["A9"] = a9Neighbors
+primaryToPrimaryDescriptionsMap["A10"] = a10Neighbors
+primaryToPrimaryDescriptionsMap["A11"] = a11Neighbors
+primaryToPrimaryDescriptionsMap["A12"] = a12Neighbors
+primaryToPrimaryDescriptionsMap["A13"] = a13Neighbors
+primaryToPrimaryDescriptionsMap["A14"] = a14Neighbors
+primaryToPrimaryDescriptionsMap["A15"] = a15Neighbors
+primaryToPrimaryDescriptionsMap["A16"] = a16Neighbors
+primaryToPrimaryDescriptionsMap["A17"] = a17Neighbors
+primaryToPrimaryDescriptionsMap["A18"] = a18Neighbors
+primaryToPrimaryDescriptionsMap["A19"] = a19Neighbors
+primaryToPrimaryDescriptionsMap["A20"] = a20Neighbors
+primaryToPrimaryDescriptionsMap["A21"] = a21Neighbors
+primaryToPrimaryDescriptionsMap["A22"] = a22Neighbors
+primaryToPrimaryDescriptionsMap["A23"] = a23Neighbors
+primaryToPrimaryDescriptionsMap["A24"] = a24Neighbors
