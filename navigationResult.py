@@ -16,13 +16,19 @@ def zonePrimaryDirections(sheet) -> str:
             primary = zpDirection.cell(row=i, column=2).value
             d1 = getStr(zpDirection.cell(row=i, column=3).value)
             d1arrow = zpDirection.cell(row=i, column=4).value
-            d1image = "https://www.transparenttextures.com/patterns/asfalt-light.png"
+            d1image = zpDirection.cell(row=i, column=5).value
+            if d1image == None:
+                d1image = ""
             d2 = getStr(zpDirection.cell(row=i, column=6).value)
             d2arrow = zpDirection.cell(row=i, column=7).value
-            d2image = "https://www.transparenttextures.com/patterns/asfalt-light.png"
+            d2image = zpDirection.cell(row=i, column=8).value
+            if d2image == None:
+                d2image = ""
             d3 = getStr(zpDirection.cell(row=i, column=9).value)
             d3arrow = zpDirection.cell(row=i, column=10).value
-            d3image = "https://www.transparenttextures.com/patterns/asfalt-light.png"
+            d3image = zpDirection.cell(row=i, column=11).value
+            if d3image == None:
+                d3image = ""
 
             if not (startZone in primarySet):
                 answer += 'var ' + name + 'Neighbors = [String:[PathStep]]()\n'
@@ -53,16 +59,24 @@ def primaryPrimaryDirections(sheet,maxDirections) -> str:
             endPrimary = ppDirection.cell(row=i, column=2).value
             d1 = getStr(ppDirection.cell(row=i, column=3).value.strip())
             d1arrow = ppDirection.cell(row=i, column=4).value.strip()
-            d1image = "https://www.transparenttextures.com/patterns/asfalt-light.png"
+            d1image = ppDirection.cell(row=i, column=5).value
+            if d1image == None:
+                d1image = ""
             d2 = getStr(ppDirection.cell(row=i, column=6).value.strip())
             d2arrow = ppDirection.cell(row=i, column=7).value.strip()
-            d2image = "https://www.transparenttextures.com/patterns/asfalt-light.png"
+            d2image = ppDirection.cell(row=i, column=8).value
+            if d2image == None:
+                d2image = ""
             d3 = getStr(ppDirection.cell(row=i, column=9).value.strip())
             d3arrow = ppDirection.cell(row=i, column=10).value.strip()
-            d3image = "https://www.transparenttextures.com/patterns/asfalt-light.png"
+            d3image = ppDirection.cell(row=i, column=11).value
+            if d3image == None:
+                d3image = ""
             d4 = getStr(ppDirection.cell(row=i, column=12).value)
             d4arrow = ppDirection.cell(row=i, column=13).value
-            d4image = "https://www.transparenttextures.com/patterns/asfalt-light.png"
+            d4image = ppDirection.cell(row=i, column=14).value
+            if d4image == None:
+                d4image = ""
             
             if not (startPrimary in primarySet):
                 answer += 'var ' + startPrimary + 'Neighbors = [String:[PathStep]]()\n'
@@ -96,16 +110,24 @@ def primarySecondaryDirections(sheet,maxDirections) -> str:
             endPrimary = psDirection.cell(row=i, column=2).value
             d1 = getStr(psDirection.cell(row=i, column=3).value)
             d1arrow = psDirection.cell(row=i, column=4).value
-            d1image = "https://www.transparenttextures.com/patterns/asfalt-light.png"
+            d1image = psDirection.cell(row=i, column=5).value
+            if d1image == None:
+                d1image = ""
             d2 = getStr(psDirection.cell(row=i, column=6).value)
             d2arrow = psDirection.cell(row=i, column=7).value
-            d2image = "https://www.transparenttextures.com/patterns/asfalt-light.png"
+            d2image = psDirection.cell(row=i, column=8).value
+            if d2image == None:
+                d2image = ""
             d3 = getStr(psDirection.cell(row=i, column=9).value)
             d3arrow = psDirection.cell(row=i, column=10).value
-            d3image = "https://www.transparenttextures.com/patterns/asfalt-light.png"
+            d3image = psDirection.cell(row=i, column=11).value
+            if d3image == None:
+                d3image = ""
             d4 = getStr(psDirection.cell(row=i, column=12).value)
             d4arrow = psDirection.cell(row=i, column=13).value
-            d4image = "https://www.transparenttextures.com/patterns/asfalt-light.png"
+            d4image = psDirection.cell(row=i, column=14).value
+            if d4image == None:
+                d4image = ""
 
             if (d1 != 'N/A' and d1 != None):
                 answer += 'tempPathStepList = [PathStep]()\ntempPathStepList.append(PathStep(directionText: ' + d1 + ', directionImage: "' + d1image + '", arrow: .' + convertArrow(d1arrow) + '))\n'
@@ -124,6 +146,7 @@ def primarySecondaryDirections(sheet,maxDirections) -> str:
 
 def addToPrimaryPrimaryMap(wb) -> str:
     answer = ""
+    
     f1p = wb.get_sheet_by_name('F1 Primary List')
     for i in range(2,f1p.max_row+1):
         if (f1p.cell(row=i, column=1).value != None):
