@@ -55,7 +55,7 @@ def createSecondaryPoints(wb) -> str:
             answer += primaryEdge[0].lower() + ' : ' + str("{0:0.1f}".format(primaryEdge[1])) + ', '
         answer = answer[:-2] + ']\n'
     d = {}
-    f2ps = wb.get_sheet_by_name('F2 Primary-Secon. Edge Values')
+    f2ps = wb.get_sheet_by_name('F2 Primary-Second. Edge Values')
     for i in range(2,f2ps.max_row + 1):
         primary = f2ps.cell(row=i, column=1).value
         secondary = f2ps.cell(row=i, column=2).value
@@ -69,7 +69,7 @@ def createSecondaryPoints(wb) -> str:
             answer += primaryEdge[0].lower() + ' : ' + str("{0:0.1f}".format(primaryEdge[1])) + ', '
         answer = answer[:-2] + ']\n'
     d = {}
-    f3ps = wb.get_sheet_by_name('F3 Primary-Secon. Edge Values')
+    f3ps = wb.get_sheet_by_name('F3 Primary-Second. Edge Values')
     for i in range(2,f3ps.max_row + 1):
         primary = f3ps.cell(row=i, column=1).value
         secondary = f3ps.cell(row=i, column=2).value

@@ -7,8 +7,7 @@ z1Neighbors["A1"] = tempPathStepList
 
 tempPathStepList = [PathStep]()
 tempPathStepList.append(PathStep(directionText: "Go to this end of the hall", directionImage: "http://i.imgur.com/ffcj5UI.jpg", arrow: .forward))
-tempPathStepList.append(PathStep(directionText: "Turn around to the right", directionImage: "http://i.imgur.com/f9beY13.jpg", arrow: .rightUTurn))
-tempPathStepList.append(PathStep(directionText: "Go up the stairs on the left", directionImage: "http://i.imgur.com/AjxCksU.jpg", arrow: .slightLeft))
+tempPathStepList.append(PathStep(directionText: "Up the stairs to the right", directionImage: "http://i.imgur.com/f9beY13.jpg", arrow: .right))
 z1Neighbors["A2"] = tempPathStepList
 
 tempPathStepList = [PathStep]()
@@ -19,9 +18,6 @@ z1Neighbors["A3"] = tempPathStepList
 tempPathStepList = [PathStep]()
 tempPathStepList.append(PathStep(directionText: "Go to this end of the hall", directionImage: "http://i.imgur.com/RKK7fUK.jpg", arrow: .forward))
 z1Neighbors["A4"] = tempPathStepList
-
-primaryToPrimaryDescriptionsMap["Zone 1"] = z1Neighbors
-
 
 var z2Neighbors = [String:[PathStep]]()
 tempPathStepList = [PathStep]()
@@ -34,12 +30,9 @@ tempPathStepList.append(PathStep(directionText: "Go to this end of the hall", di
 tempPathStepList.append(PathStep(directionText: "Go outside through the doors shown", directionImage: "http://i.imgur.com/bFZvSXi.jpg", arrow: .forward))
 z2Neighbors["A6"] = tempPathStepList
 
-primaryToPrimaryDescriptionsMap["Zone 2"] = z2Neighbors
-
-
 var z3Neighbors = [String:[PathStep]]()
 tempPathStepList = [PathStep]()
-tempPathStepList.append(PathStep(directionText: "Go down this end of the hall", directionImage: "http://i.imgur.com/qG2pmnY.jpg", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Go down this end of the hall", directionImage: "http://i.imgur.com/iK2RAK9.jpg", arrow: .forward))
 z3Neighbors["A4"] = tempPathStepList
 
 tempPathStepList = [PathStep]()
@@ -56,9 +49,6 @@ tempPathStepList = [PathStep]()
 tempPathStepList.append(PathStep(directionText: "Go down this end of the hall", directionImage: "http://i.imgur.com/0uSgnpH.jpg", arrow: .forward))
 z3Neighbors["A8"] = tempPathStepList
 
-primaryToPrimaryDescriptionsMap["Zone 3"] = z3Neighbors
-
-
 var z4Neighbors = [String:[PathStep]]()
 tempPathStepList = [PathStep]()
 tempPathStepList.append(PathStep(directionText: "Go up the stairs shown", directionImage: "", arrow: .forward))
@@ -71,9 +61,6 @@ z4Neighbors["A9"] = tempPathStepList
 tempPathStepList = [PathStep]()
 tempPathStepList.append(PathStep(directionText: "Go down the hallway shown", directionImage: "", arrow: .forward))
 z4Neighbors["A10"] = tempPathStepList
-
-primaryToPrimaryDescriptionsMap["Zone 4"] = z4Neighbors
-
 
 var z5Neighbors = [String:[PathStep]]()
 tempPathStepList = [PathStep]()
@@ -96,9 +83,6 @@ tempPathStepList = [PathStep]()
 tempPathStepList.append(PathStep(directionText: "Go down the hallway shown", directionImage: "", arrow: .forward))
 z5Neighbors["A14"] = tempPathStepList
 
-primaryToPrimaryDescriptionsMap["Zone 5"] = z5Neighbors
-
-
 var z6Neighbors = [String:[PathStep]]()
 tempPathStepList = [PathStep]()
 tempPathStepList.append(PathStep(directionText: "Go down the stairs shown", directionImage: "", arrow: .forward))
@@ -115,9 +99,6 @@ tempPathStepList.append(PathStep(directionText: "Go to this end of the hall", di
 tempPathStepList.append(PathStep(directionText: "Go through the doors ahead", directionImage: "", arrow: .forward))
 z6Neighbors["A16"] = tempPathStepList
 
-primaryToPrimaryDescriptionsMap["Zone 6"] = z6Neighbors
-
-
 var z7Neighbors = [String:[PathStep]]()
 tempPathStepList = [PathStep]()
 tempPathStepList.append(PathStep(directionText: "Go down this end of the hall", directionImage: "", arrow: .forward))
@@ -133,9 +114,6 @@ tempPathStepList.append(PathStep(directionText: "Go to this end of the hall", di
 tempPathStepList.append(PathStep(directionText: "Go through the doors ahead", directionImage: "", arrow: .forward))
 z7Neighbors["A18"] = tempPathStepList
 
-primaryToPrimaryDescriptionsMap["Zone 7"] = z7Neighbors
-
-
 var z8Neighbors = [String:[PathStep]]()
 tempPathStepList = [PathStep]()
 tempPathStepList.append(PathStep(directionText: "Go through the doors shown", directionImage: "", arrow: .forward))
@@ -144,9 +122,6 @@ z8Neighbors["A18"] = tempPathStepList
 tempPathStepList = [PathStep]()
 tempPathStepList.append(PathStep(directionText: "Go through the doors shown", directionImage: "", arrow: .forward))
 z8Neighbors["A19"] = tempPathStepList
-
-primaryToPrimaryDescriptionsMap["Zone 8"] = z8Neighbors
-
 
 var z9Neighbors = [String:[PathStep]]()
 tempPathStepList = [PathStep]()
@@ -158,9 +133,6 @@ tempPathStepList = [PathStep]()
 tempPathStepList.append(PathStep(directionText: "Go down this end of the hall", directionImage: "", arrow: .forward))
 z9Neighbors["A20"] = tempPathStepList
 
-primaryToPrimaryDescriptionsMap["Zone 9"] = z9Neighbors
-
-
 var z10Neighbors = [String:[PathStep]]()
 tempPathStepList = [PathStep]()
 tempPathStepList.append(PathStep(directionText: "Go down this end of the hall", directionImage: "", arrow: .forward))
@@ -169,9 +141,6 @@ z10Neighbors["A20"] = tempPathStepList
 tempPathStepList = [PathStep]()
 tempPathStepList.append(PathStep(directionText: "Go down this end of the hall", directionImage: "", arrow: .forward))
 z10Neighbors["A21"] = tempPathStepList
-
-primaryToPrimaryDescriptionsMap["Zone 10"] = z10Neighbors
-
 
 var z11Neighbors = [String:[PathStep]]()
 tempPathStepList = [PathStep]()
@@ -186,9 +155,6 @@ z11Neighbors["A21"] = tempPathStepList
 tempPathStepList = [PathStep]()
 tempPathStepList.append(PathStep(directionText: "Go down the hallway shown", directionImage: "", arrow: .forward))
 z11Neighbors["A22"] = tempPathStepList
-
-primaryToPrimaryDescriptionsMap["Zone 11"] = z11Neighbors
-
 
 var z12Neighbors = [String:[PathStep]]()
 tempPathStepList = [PathStep]()
@@ -205,9 +171,6 @@ tempPathStepList.append(PathStep(directionText: "Turn right at the end of the ha
 tempPathStepList.append(PathStep(directionText: "Take the hall ahead to the left", directionImage: "", arrow: .slightLeft))
 z12Neighbors["A24"] = tempPathStepList
 
-primaryToPrimaryDescriptionsMap["Zone 12"] = z12Neighbors
-
-
 var z13Neighbors = [String:[PathStep]]()
 tempPathStepList = [PathStep]()
 tempPathStepList.append(PathStep(directionText: "Go down this end of the hall.", directionImage: "", arrow: .forward))
@@ -217,9 +180,6 @@ tempPathStepList = [PathStep]()
 tempPathStepList.append(PathStep(directionText: "Go down this end of the hall.", directionImage: "", arrow: .forward))
 tempPathStepList.append(PathStep(directionText: "Go down the stairs ahead.", directionImage: "", arrow: .forward))
 z13Neighbors["A23"] = tempPathStepList
-
-primaryToPrimaryDescriptionsMap["Zone 13"] = z13Neighbors
-
 
 var z14Neighbors = [String:[PathStep]]()
 tempPathStepList = [PathStep]()
@@ -234,9 +194,6 @@ tempPathStepList = [PathStep]()
 tempPathStepList.append(PathStep(directionText: "Go down this end of the hall.", directionImage: "", arrow: .forward))
 z14Neighbors["A24"] = tempPathStepList
 
-primaryToPrimaryDescriptionsMap["Zone 14"] = z14Neighbors
-
-
 var oz16Neighbors = [String:[PathStep]]()
 tempPathStepList = [PathStep]()
 tempPathStepList.append(PathStep(directionText: "Go through the entrance shown.", directionImage: "http://i.imgur.com/xwE7YzJ.jpg", arrow: .forward))
@@ -245,12 +202,6 @@ oz16Neighbors["A1"] = tempPathStepList
 tempPathStepList = [PathStep]()
 tempPathStepList.append(PathStep(directionText: "Go through the entrance shown.", directionImage: "http://i.imgur.com/Tuujgk1.jpg", arrow: .forward))
 oz16Neighbors["A6"] = tempPathStepList
-
-primaryToPrimaryDescriptionsMap["OutZone 16"] = oz16Neighbors
-
-
-primaryToPrimaryDescriptionsMap["OutZone 16"] = oz16Neighbors
-
 
 var z17Neighbors = [String:[PathStep]]()
 tempPathStepList = [PathStep]()
@@ -273,9 +224,6 @@ tempPathStepList.append(PathStep(directionText: "Go up the stairs shown", direct
 tempPathStepList.append(PathStep(directionText: "Through the doors ahead on the right", directionImage: "http://i.imgur.com/YWaUMKa.jpg", arrow: .slightRight))
 z17Neighbors["B4"] = tempPathStepList
 
-primaryToPrimaryDescriptionsMap["Zone 17"] = z17Neighbors
-
-
 var oz3Neighbors = [String:[PathStep]]()
 tempPathStepList = [PathStep]()
 tempPathStepList.append(PathStep(directionText: "Go up the stairs shown", directionImage: "http://i.imgur.com/DQhtMN5.jpg", arrow: .forward))
@@ -290,9 +238,6 @@ tempPathStepList = [PathStep]()
 tempPathStepList.append(PathStep(directionText: "Through the doors shown", directionImage: "http://i.imgur.com/tK8TlxS.jpg", arrow: .forward))
 z21Neighbors["C1"] = tempPathStepList
 
-primaryToPrimaryDescriptionsMap["Zone 21"] = z21Neighbors
-
-
 var oz22Neighbors = [String:[PathStep]]()
 tempPathStepList = [PathStep]()
 tempPathStepList.append(PathStep(directionText: "Through the doors shown", directionImage: "http://i.imgur.com/Mpukpf0.jpg", arrow: .forward))
@@ -301,6 +246,90 @@ oz22Neighbors["C1"] = tempPathStepList
 tempPathStepList = [PathStep]()
 tempPathStepList.append(PathStep(directionText: "Down the stairs shown", directionImage: "http://i.imgur.com/33bw5QK.jpg", arrow: .forward))
 oz22Neighbors["C2"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go to the end of the hall shown", directionImage: "http://i.imgur.com/3N5Qjxy.jpg", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Turn right", directionImage: "http://i.imgur.com/TkYSbSE.jpg", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Through the doors ahead", directionImage: "http://i.imgur.com/S2zl5Vi.jpg", arrow: .forward))
+z1Neighbors["S1"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go to the end of the hall shown", directionImage: "http://i.imgur.com/3N5Qjxy.jpg", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Turn left", directionImage: "http://i.imgur.com/TkYSbSE.jpg", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Through the doors ahead", directionImage: "http://i.imgur.com/9wPZTJy.jpg", arrow: .forward))
+z1Neighbors["S12"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go to the middle of the hall shown", directionImage: "http://i.imgur.com/3N5Qjxy.jpg", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the doors shown", directionImage: "http://i.imgur.com/seGeNAR.jpg", arrow: .forward))
+z1Neighbors["S13"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go to the end of the hall shown", directionImage: "http://i.imgur.com/RKK7fUK.jpg", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Turn right", directionImage: "http://i.imgur.com/x0bHHc1.jpg", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Through the doors ahead", directionImage: "http://i.imgur.com/P38823f.jpg", arrow: .forward))
+z1Neighbors["S14"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go to the end of the hall shown", directionImage: "http://i.imgur.com/9CqZQfY.jpg", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Turn left", directionImage: "http://i.imgur.com/PTXyKvC.jpg", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Through the doors ahead", directionImage: "http://i.imgur.com/6DR6pgE.jpg", arrow: .forward))
+z3Neighbors["S15"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go to the end of the hall shown", directionImage: "http://i.imgur.com/wsBtUrK.jpg", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Turn right", directionImage: "http://i.imgur.com/rLsJ6DP.jpg", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Through the doors ahead", directionImage: "http://i.imgur.com/MhgGfrj.jpg", arrow: .forward))
+z3Neighbors["S16"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the stairs shown", directionImage: "http://i.imgur.com/jBlfv7s.jpg", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the doors ahead on the right", directionImage: "http://i.imgur.com/P9UVY5m.jpg", arrow: .slightRight))
+z2Neighbors["S8"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the stairs shown", directionImage: "http://i.imgur.com/jBlfv7s.jpg", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the doors ahead on the left", directionImage: "http://i.imgur.com/pI2SErT.jpg", arrow: .slightLeft))
+z2Neighbors["S9"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the stairs shown", directionImage: "http://i.imgur.com/sSCDVcY.jpg", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the first door on the right", directionImage: "http://i.imgur.com/1mI68w6.jpg", arrow: .slightRight))
+z2Neighbors["S10"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the stairs shown", directionImage: "http://i.imgur.com/sSCDVcY.jpg", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the second door on the right", directionImage: "http://i.imgur.com/1mI68w6.jpg", arrow: .slightRight))
+z2Neighbors["S11"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go down the stairs shown", directionImage: "http://i.imgur.com/Bxw3b0C.jpg", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Through the doors on the right", directionImage: "http://i.imgur.com/Y959ANc.jpg", arrow: .right))
+z17Neighbors["S46"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go up the stairs shown", directionImage: "http://i.imgur.com/tp7vldX.jpg", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Turn left", directionImage: "http://i.imgur.com/K3l41ne.jpg", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Through the doors ahead", directionImage: "http://i.imgur.com/7620Pos.jpg", arrow: .forward))
+z17Neighbors["S47"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go up the stairs shown", directionImage: "http://i.imgur.com/tp7vldX.jpg", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Turn left", directionImage: "http://i.imgur.com/K3l41ne.jpg", arrow: .left))
+tempPathStepList.append(PathStep(directionText: "Through the doors ahead on the right", directionImage: "http://i.imgur.com/3tEZect.jpg", arrow: .slightRight))
+z17Neighbors["S48"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go through the hall shown", directionImage: "http://i.imgur.com/eaUle12.jpg", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Turn right", directionImage: "http://i.imgur.com/r86aTNP.jpg", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Through the door on the right", directionImage: "http://i.imgur.com/Ma2LrUg.jpg", arrow: .right))
+z21Neighbors["S75"] = tempPathStepList
+
+tempPathStepList = [PathStep]()
+tempPathStepList.append(PathStep(directionText: "Go through the hall shown", directionImage: "http://i.imgur.com/eaUle12.jpg", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Turn right", directionImage: "http://i.imgur.com/r86aTNP.jpg", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Through the door on the left", directionImage: "http://i.imgur.com/jSNazKH.jpg", arrow: .left))
+z21Neighbors["S76"] = tempPathStepList
 
 var a1Neighbors = [String:[PathStep]]()
 tempPathStepList = [PathStep]()
@@ -327,13 +356,13 @@ tempPathStepList.append(PathStep(directionText: "Go to the doors", directionImag
 a2Neighbors["A1"] = tempPathStepList
 
 tempPathStepList = [PathStep]()
-tempPathStepList.append(PathStep(directionText: "Turn around to the left", directionImage: "http://i.imgur.com/NiHWMt0.jpg", arrow: .leftUTurn))
+tempPathStepList.append(PathStep(directionText: "Down the hall to the left", directionImage: "http://i.imgur.com/NiHWMt0.jpg", arrow: .left))
 tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "http://i.imgur.com/lvqLvlz.jpg", arrow: .forward))
 tempPathStepList.append(PathStep(directionText: "Take the elevator on the left", directionImage: "http://i.imgur.com/Cj386Ks.jpg", arrow: .left))
 a2Neighbors["A3"] = tempPathStepList
 
 tempPathStepList = [PathStep]()
-tempPathStepList.append(PathStep(directionText: "Turn around to the left", directionImage: "http://i.imgur.com/NiHWMt0.jpg", arrow: .leftUTurn))
+tempPathStepList.append(PathStep(directionText: "Down the hall to the left", directionImage: "http://i.imgur.com/NiHWMt0.jpg", arrow: .left))
 tempPathStepList.append(PathStep(directionText: "Go to the end of the hall", directionImage: "http://i.imgur.com/lvqLvlz.jpg", arrow: .forward))
 a2Neighbors["A4"] = tempPathStepList
 
@@ -347,7 +376,7 @@ a3Neighbors["A1"] = tempPathStepList
 tempPathStepList = [PathStep]()
 tempPathStepList.append(PathStep(directionText: "Go right", directionImage: "http://i.imgur.com/vD9sva1.jpg", arrow: .right))
 tempPathStepList.append(PathStep(directionText: "Continue down the hall", directionImage: "http://i.imgur.com/3N5Qjxy.jpg", arrow: .forward))
-tempPathStepList.append(PathStep(directionText: "Turn around and go up the stairs", directionImage: "http://i.imgur.com/bjqIlvh.jpg", arrow: .rightUTurn))
+tempPathStepList.append(PathStep(directionText: "Up the stairs to the right", directionImage: "http://i.imgur.com/bjqIlvh.jpg", arrow: .right))
 a3Neighbors["A2"] = tempPathStepList
 
 tempPathStepList = [PathStep]()
@@ -357,13 +386,13 @@ a3Neighbors["A4"] = tempPathStepList
 
 var a4Neighbors = [String:[PathStep]]()
 tempPathStepList = [PathStep]()
-tempPathStepList.append(PathStep(directionText: "Go  to the end of the hall", directionImage: "http://i.imgur.com/3N5Qjxy.jpg", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Go to the end of the hall", directionImage: "http://i.imgur.com/3N5Qjxy.jpg", arrow: .forward))
 tempPathStepList.append(PathStep(directionText: "Through the doors ahead", directionImage: "http://i.imgur.com/eT04wSs.jpg", arrow: .forward))
 a4Neighbors["A1"] = tempPathStepList
 
 tempPathStepList = [PathStep]()
-tempPathStepList.append(PathStep(directionText: "Go  to the end of the hall", directionImage: "http://i.imgur.com/3N5Qjxy.jpg", arrow: .forward))
-tempPathStepList.append(PathStep(directionText: "Turn around and go up the stairs", directionImage: "http://i.imgur.com/bjqIlvh.jpg", arrow: .rightUTurn))
+tempPathStepList.append(PathStep(directionText: "Go to the end of the hall", directionImage: "http://i.imgur.com/3N5Qjxy.jpg", arrow: .forward))
+tempPathStepList.append(PathStep(directionText: "Up the stairs to the right", directionImage: "http://i.imgur.com/bjqIlvh.jpg", arrow: .right))
 a4Neighbors["A2"] = tempPathStepList
 
 tempPathStepList = [PathStep]()
@@ -414,7 +443,7 @@ a5Neighbors["A8"] = tempPathStepList
 var a6Neighbors = [String:[PathStep]]()
 tempPathStepList = [PathStep]()
 tempPathStepList.append(PathStep(directionText: "Take the path on the right", directionImage: "http://i.imgur.com/6R352rF.jpg", arrow: .right))
-tempPathStepList.append(PathStep(directionText: "Through the doors on therightt", directionImage: "http://i.imgur.com/jYUvc6z.jpg", arrow: .right))
+tempPathStepList.append(PathStep(directionText: "Through the doors on the right", directionImage: "http://i.imgur.com/jYUvc6z.jpg", arrow: .right))
 a6Neighbors["A1"] = tempPathStepList
 
 tempPathStepList = [PathStep]()
@@ -1420,13 +1449,6 @@ tempPathStepList.append(PathStep(directionText: "Through the door on the left", 
 a1Neighbors["S1"] = tempPathStepList
 
 tempPathStepList = [PathStep]()
-tempPathStepList.append(PathStep(directionText: "Exit through the doors", directionImage: "http://i.imgur.com/26V3rcm.jpg", arrow: .forward))
-a1Neighbors["S2"] = tempPathStepList
-
-tempPathStepList = [PathStep]()
-a1Neighbors["S3"] = tempPathStepList
-
-tempPathStepList = [PathStep]()
 tempPathStepList.append(PathStep(directionText: "Through the first door on the right", directionImage: "http://i.imgur.com/6f80ySA.jpg", arrow: .slightRight))
 a1Neighbors["S12"] = tempPathStepList
 
@@ -1445,18 +1467,18 @@ tempPathStepList.append(PathStep(directionText: "Through the door on the right",
 a2Neighbors["S1"] = tempPathStepList
 
 tempPathStepList = [PathStep]()
-tempPathStepList.append(PathStep(directionText: "Turn around to the left", directionImage: "http://i.imgur.com/a4ymklY.jpg", arrow: .leftUTurn))
+tempPathStepList.append(PathStep(directionText: "Down the hall to the left", directionImage: "http://i.imgur.com/a4ymklY.jpg", arrow: .left))
 tempPathStepList.append(PathStep(directionText: "Through the door on the right", directionImage: "http://i.imgur.com/RKK7fUK.jpg", arrow: .slightRight))
 a2Neighbors["S12"] = tempPathStepList
 
 tempPathStepList = [PathStep]()
-tempPathStepList.append(PathStep(directionText: "Turn around to the left", directionImage: "http://i.imgur.com/a4ymklY.jpg", arrow: .leftUTurn))
+tempPathStepList.append(PathStep(directionText: "Down the hall to the left", directionImage: "http://i.imgur.com/a4ymklY.jpg", arrow: .left))
 tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "http://i.imgur.com/RKK7fUK.jpg", arrow: .forward))
 tempPathStepList.append(PathStep(directionText: "Through the second door on the right", directionImage: "http://i.imgur.com/ND8d6xV.jpg", arrow: .right))
 a2Neighbors["S13"] = tempPathStepList
 
 tempPathStepList = [PathStep]()
-tempPathStepList.append(PathStep(directionText: "Turn around to the left", directionImage: "http://i.imgur.com/a4ymklY.jpg", arrow: .leftUTurn))
+tempPathStepList.append(PathStep(directionText: "Down the hall to the left", directionImage: "http://i.imgur.com/a4ymklY.jpg", arrow: .left))
 tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "http://i.imgur.com/RKK7fUK.jpg", arrow: .forward))
 tempPathStepList.append(PathStep(directionText: "Through the third door on the right", directionImage: "http://i.imgur.com/svd0s7V.jpg", arrow: .right))
 a2Neighbors["S14"] = tempPathStepList
@@ -1519,26 +1541,6 @@ a4Neighbors["S16"] = tempPathStepList
 
 tempPathStepList = [PathStep]()
 tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "http://i.imgur.com/kQM7sby.jpg", arrow: .forward))
-tempPathStepList.append(PathStep(directionText: "Through the fourth two doors on the right", directionImage: "http://i.imgur.com/GDnFUMZ.jpg", arrow: .right))
-a5Neighbors["S4"] = tempPathStepList
-
-tempPathStepList = [PathStep]()
-tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "http://i.imgur.com/kQM7sby.jpg", arrow: .forward))
-tempPathStepList.append(PathStep(directionText: "Through the third two doors on the right", directionImage: "http://i.imgur.com/ZDn4LF2.jpg", arrow: .right))
-a5Neighbors["S5"] = tempPathStepList
-
-tempPathStepList = [PathStep]()
-tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "http://i.imgur.com/kQM7sby.jpg", arrow: .forward))
-tempPathStepList.append(PathStep(directionText: "Through the second two doors on the right", directionImage: "http://i.imgur.com/llLhWwl.jpg", arrow: .right))
-a5Neighbors["S6"] = tempPathStepList
-
-tempPathStepList = [PathStep]()
-tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "http://i.imgur.com/kQM7sby.jpg", arrow: .forward))
-tempPathStepList.append(PathStep(directionText: "Through the first two doors on the right", directionImage: "http://i.imgur.com/MvyUlyu.jpg", arrow: .right))
-a5Neighbors["S7"] = tempPathStepList
-
-tempPathStepList = [PathStep]()
-tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "http://i.imgur.com/kQM7sby.jpg", arrow: .forward))
 tempPathStepList.append(PathStep(directionText: "Take the stairs on the left", directionImage: "http://i.imgur.com/jBlfv7s.jpg", arrow: .left))
 tempPathStepList.append(PathStep(directionText: "Through the doors on the right", directionImage: "http://i.imgur.com/P9UVY5m.jpg", arrow: .slightRight))
 a5Neighbors["S8"] = tempPathStepList
@@ -1569,26 +1571,6 @@ tempPathStepList = [PathStep]()
 tempPathStepList.append(PathStep(directionText: "Turn left ahead", directionImage: "http://i.imgur.com/MkJ8JIJ.jpg", arrow: .left))
 tempPathStepList.append(PathStep(directionText: "Through the doors ahead", directionImage: "http://i.imgur.com/Y9ks1gZ.jpg", arrow: .forward))
 a5Neighbors["S16"] = tempPathStepList
-
-tempPathStepList = [PathStep]()
-tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "http://i.imgur.com/tyHEI9u.jpg", arrow: .forward))
-tempPathStepList.append(PathStep(directionText: "Through the first two doors on the left", directionImage: "http://i.imgur.com/S6llkCP.jpg", arrow: .left))
-a6Neighbors["S4"] = tempPathStepList
-
-tempPathStepList = [PathStep]()
-tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "http://i.imgur.com/tyHEI9u.jpg", arrow: .forward))
-tempPathStepList.append(PathStep(directionText: "Through the second two doors on the left", directionImage: "http://i.imgur.com/MJFY0oJ.jpg", arrow: .left))
-a6Neighbors["S5"] = tempPathStepList
-
-tempPathStepList = [PathStep]()
-tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "http://i.imgur.com/tyHEI9u.jpg", arrow: .forward))
-tempPathStepList.append(PathStep(directionText: "Through the third two doors on the left", directionImage: "http://i.imgur.com/l7jA0Ks.jpg", arrow: .left))
-a6Neighbors["S6"] = tempPathStepList
-
-tempPathStepList = [PathStep]()
-tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "http://i.imgur.com/tyHEI9u.jpg", arrow: .forward))
-tempPathStepList.append(PathStep(directionText: "Through the fourth two doors on the left", directionImage: "http://i.imgur.com/XGVzvXc.jpg", arrow: .left))
-a6Neighbors["S7"] = tempPathStepList
 
 tempPathStepList = [PathStep]()
 tempPathStepList.append(PathStep(directionText: "Go down the hall", directionImage: "http://i.imgur.com/tyHEI9u.jpg", arrow: .forward))
@@ -2412,6 +2394,25 @@ tempPathStepList.append(PathStep(directionText: "Follow the walkway ahead", dire
 tempPathStepList.append(PathStep(directionText: "Through the door on the right", directionImage: "http://i.imgur.com/yQ1f7Ux.jpg", arrow: .right))
 c1Neighbors["S77"] = tempPathStepList
 
+primaryToPrimaryDescriptionsMap["Zone 21"] = z21Neighbors
+primaryToPrimaryDescriptionsMap["Zone 4"] = z4Neighbors
+primaryToPrimaryDescriptionsMap["Zone 13"] = z13Neighbors
+primaryToPrimaryDescriptionsMap["OutZone 3"] = oz3Neighbors
+primaryToPrimaryDescriptionsMap["Zone 11"] = z11Neighbors
+primaryToPrimaryDescriptionsMap["Zone 6"] = z6Neighbors
+primaryToPrimaryDescriptionsMap["Zone 14"] = z14Neighbors
+primaryToPrimaryDescriptionsMap["Zone 12"] = z12Neighbors
+primaryToPrimaryDescriptionsMap["Zone 17"] = z17Neighbors
+primaryToPrimaryDescriptionsMap["Zone 10"] = z10Neighbors
+primaryToPrimaryDescriptionsMap["Zone 8"] = z8Neighbors
+primaryToPrimaryDescriptionsMap["Zone 7"] = z7Neighbors
+primaryToPrimaryDescriptionsMap["OutZone 16"] = oz16Neighbors
+primaryToPrimaryDescriptionsMap["Zone 9"] = z9Neighbors
+primaryToPrimaryDescriptionsMap["Zone 1"] = z1Neighbors
+primaryToPrimaryDescriptionsMap["Zone 2"] = z2Neighbors
+primaryToPrimaryDescriptionsMap["OutZone 22"] = oz22Neighbors
+primaryToPrimaryDescriptionsMap["Zone 3"] = z3Neighbors
+primaryToPrimaryDescriptionsMap["Zone 5"] = z5Neighbors
 primaryToPrimaryDescriptionsMap["A1"] = a1Neighbors
 primaryToPrimaryDescriptionsMap["A2"] = a2Neighbors
 primaryToPrimaryDescriptionsMap["A3"] = a3Neighbors

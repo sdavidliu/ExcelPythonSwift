@@ -40,8 +40,45 @@ def zonePrimaryDirections(sheet) -> str:
             if (d3 != 'N/A'):
                 answer += 'tempPathStepList.append(PathStep(directionText: ' + d3 + ', directionImage: "' + d3image + '", arrow: .' + convertArrow(d3arrow) + '))\n'
             answer += name + 'Neighbors["' + primary + '"] = tempPathStepList\n\n'
-        else:
-            answer += 'primaryToPrimaryDescriptionsMap["' + startZone + '"] = ' + name + 'Neighbors\n\n\n'
+
+    return answer
+
+
+def zoneSecondaryDirections(sheet) -> str:
+    answer = ""
+    zsDirection = sheet
+    startZone = ""
+    name = ""
+    for i in range(2,zsDirection.max_row+1):
+        if (zsDirection.cell(row=i, column=1).value != None):
+            startZone = zsDirection.cell(row=i, column=1).value
+            name = 'z' + startZone[5:]
+            if ('Out' in startZone):
+                name = 'oz' + startZone[8:]
+            primary = zsDirection.cell(row=i, column=2).value
+            d1 = getStr(zsDirection.cell(row=i, column=3).value)
+            d1arrow = zsDirection.cell(row=i, column=4).value
+            d1image = zsDirection.cell(row=i, column=5).value
+            if d1image == None:
+                d1image = ""
+            d2 = getStr(zsDirection.cell(row=i, column=6).value)
+            d2arrow = zsDirection.cell(row=i, column=7).value
+            d2image = zsDirection.cell(row=i, column=8).value
+            if d2image == None:
+                d2image = ""
+            d3 = getStr(zsDirection.cell(row=i, column=9).value)
+            d3arrow = zsDirection.cell(row=i, column=10).value
+            d3image = zsDirection.cell(row=i, column=11).value
+            if d3image == None:
+                d3image = ""
+
+            if (d1 != 'N/A'):
+                answer += 'tempPathStepList = [PathStep]()\ntempPathStepList.append(PathStep(directionText: ' + d1 + ', directionImage: "' + d1image + '", arrow: .' + convertArrow(d1arrow) + '))\n'
+            if (d2 != 'N/A'):
+                answer += 'tempPathStepList.append(PathStep(directionText: ' + d2 + ', directionImage: "' + d2image + '", arrow: .' + convertArrow(d2arrow) + '))\n'
+            if (d3 != 'N/A'):
+                answer += 'tempPathStepList.append(PathStep(directionText: ' + d3 + ', directionImage: "' + d3image + '", arrow: .' + convertArrow(d3arrow) + '))\n'
+            answer += name + 'Neighbors["' + primary + '"] = tempPathStepList\n\n'
 
     return answer
 
@@ -146,7 +183,26 @@ def primarySecondaryDirections(sheet,maxDirections) -> str:
 
 def addToPrimaryPrimaryMap(wb) -> str:
     answer = ""
-    
+
+    zoneSet = set()
+    f1z = wb.get_sheet_by_name('F1 Zone-Primary Start Direction')
+    for i in range(2,f1z.max_row+1):
+        if (f1z.cell(row=i, column=1).value != None):
+            zoneSet.add(f1z.cell(row=i, column=1).value)
+    f2z = wb.get_sheet_by_name('F2 Zone-Primary Start Direction')
+    for i in range(2,f2z.max_row+1):
+        if (f2z.cell(row=i, column=1).value != None):
+            zoneSet.add(f2z.cell(row=i, column=1).value)
+    f3z = wb.get_sheet_by_name('F3 Zone-Primary Start Direction')
+    for i in range(2,f3z.max_row+1):
+        if (f3z.cell(row=i, column=1).value != None):
+            zoneSet.add(f3z.cell(row=i, column=1).value)
+    for z in zoneSet:
+        if ('Out' in z):
+            name = 'oz' + z[8:]
+            answer += 'primaryToPrimaryDescriptionsMap["' + z + '"] = ' + name.lower().replace(' ','') + 'Neighbors\n'
+        else:
+            answer += 'primaryToPrimaryDescriptionsMap["' + z + '"] = z' + z.lower().replace(' ','')[4:] + 'Neighbors\n'
     f1p = wb.get_sheet_by_name('F1 Primary List')
     for i in range(2,f1p.max_row+1):
         if (f1p.cell(row=i, column=1).value != None):
@@ -198,6 +254,9 @@ if __name__ == '__main__':
     f1zp = zonePrimaryDirections(wb.get_sheet_by_name('F1 Zone-Primary Start Direction'))
     f2zp = zonePrimaryDirections(wb.get_sheet_by_name('F2 Zone-Primary Start Direction'))
     f3zp = zonePrimaryDirections(wb.get_sheet_by_name('F3 Zone-Primary Start Direction'))
+    f1zs = zoneSecondaryDirections(wb.get_sheet_by_name('F1 Zone-Second. Start Direction'))
+    f2zs = zoneSecondaryDirections(wb.get_sheet_by_name('F2 Zone-Second. Start Direction'))
+    f3zs = zoneSecondaryDirections(wb.get_sheet_by_name('F3 Zone-Second. Start Direction'))
     f1pp = primaryPrimaryDirections(wb.get_sheet_by_name('F1 Primary-Primary Directions'),4)
     f2pp = primaryPrimaryDirections(wb.get_sheet_by_name('F2 Primary-Primary Directions'),3)
     f3pp = primaryPrimaryDirections(wb.get_sheet_by_name('F3 Primary-Primary Directions'),4)
@@ -212,6 +271,9 @@ if __name__ == '__main__':
     file.write(f1zp)
     file.write(f2zp)
     file.write(f3zp)
+    file.write(f1zs)
+    file.write(f2zs)
+    file.write(f3zs)
     file.write(f1pp)
     file.write(f2pp)
     file.write(f3pp)
